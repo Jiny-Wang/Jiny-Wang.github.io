@@ -1,0 +1,252 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gabirelle&#39;s Blog ~ – test seq</title>
+    <link>http://Jiny-Wang.github.io/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/</link>
+    <description>Recent content in test seq on Gabirelle&#39;s Blog ~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 10 Jun 2024 15:28:16 +0800</lastBuildDate>
+    
+	  <atom:link href="http://Jiny-Wang.github.io/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>hugo联合github搭建blog</title>
+      <link>http://Jiny-Wang.github.io/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/hugo_github_buildblog/</link>
+      <pubDate>Mon, 10 Jun 2024 16:09:29 +0800</pubDate>
+      
+      <guid>http://Jiny-Wang.github.io/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/hugo_github_buildblog/</guid>
+      <description>
+        
+        
+        &lt;p&gt;平台：macbook&lt;br&gt;
+时间：2024.6&lt;br&gt;
+参考：&lt;br&gt;
+hugo教程：&lt;a href=&#34;https://hugo.opendocs.io/getting-started/quick-start/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hugo.opendocs.io/getting-started/quick-start/&lt;/a&gt;&lt;br&gt;
+hextra主题：&lt;a href=&#34;https://imfing.github.io/hextra/docs/getting-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://imfing.github.io/hextra/docs/getting-started/&lt;/a&gt;&lt;br&gt;
+其他大佬的分享：&lt;a href=&#34;https://krislinzhao.github.io/docs/create-a-wesite-using-github-pages-and-hugo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://krislinzhao.github.io/docs/create-a-wesite-using-github-pages-and-hugo/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.gohugo.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.gohugo.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;工具配置&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;工具配置&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e5%b7%a5%e5%85%b7%e9%85%8d%e7%bd%ae&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;hugo&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;brew install hugo&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;其他平台参考&lt;a href=&#34;&#34; &gt;官方手册&lt;/a&gt;
+&lt;a href=&#34;https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;git&lt;/a&gt;安装&lt;/p&gt;
+&lt;h2&gt;hogu创建站点&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;hogu创建站点&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hogu%e5%88%9b%e5%bb%ba%e7%ab%99%e7%82%b9&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;仿照krislinzhao分享的教程，创建2个 GitHub 仓库，1个源仓库：用于储存所有 Markdown 、图片等。勾选 Pricate，设置为私人仓库。&lt;br&gt;
+1个GitHub Pages 仓库：储存由 Hugo 从Markdown 文件生成的 HTML 文件。命名为&amp;lt;username.github.io&amp;gt;（严格规范），设置为公开仓库。&lt;br&gt;
+这样就可以在本地博客源仓库中进行修改，之后 Hugo 生成的静态 HTML 文件部署到远端 GitHub Pages 仓库中。当然也可以都放在一个仓库。&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;hugo new site BlogSource
+#由于选择的主题的要求，我再加一个参数
+hugo new site BlogSource --format=yaml&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;下载主题,主题可以从[官方]（https://themes.gohugo.io/）查找&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;git init
+git submodule add https://github.com/imfing/hextra.git themes/hextra
+
+#在hugo.yaml中增加
+theme: hextra&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;创建文档&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;hugo new about.md&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;生成的md文件自动产生于 content目录下，文档格式为：&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;&amp;#43;&amp;#43;&amp;#43;
+date = &amp;#34;2015-10-25T08:36:54-07:00&amp;#34;
+draft = true
+title = &amp;#34;about&amp;#34;
+&amp;#43;&amp;#43;&amp;#43;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;date是文件创建日期；draft: true代表这篇文章是一个草稿，Hugo 不会显示草稿，要在主页显示添加的文章，可以设置 draft: false
+此时已经已经可以在本地进行预览：&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;hugo server --buildDrafts --disableFastRender&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;h2&gt;文件架构&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;文件架构&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e6%96%87%e4%bb%b6%e6%9e%b6%e6%9e%84&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;文件组织架构可以理解为目录的结构，需要结合使用的主题进行实践探索&lt;br&gt;
+krislinzhao分享的教程中提到可以把theme的exampleSite中文件直接复制过来，以减少许多问题，但对我所使用的主题hextra不起作用，有幸hextra也提供了很完整的&lt;a href=&#34;https://imfing.github.io/hextra/zh-cn/docs/getting-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;教程&lt;/a&gt;,尤其是已经配置了github的&lt;a href=&#34;https://github.com/imfing/hextra-starter-template&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;工作流&lt;/a&gt;，可以直接复制它的项目进行一点内容的修改就可以直接用了。&lt;br&gt;
+hextra主题支持的架构如下：&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;content
+├── _index.md // &amp;lt;- /
+├── docs
+│   ├── _index.md // &amp;lt;- /docs/
+│   ├── getting-started.md // &amp;lt;- /docs/getting-started/
+│   └── guide
+│       ├── _index.md // &amp;lt;- /docs/guide/
+│       └── organize-files.md // &amp;lt;- /docs/guide/organize-files/
+└── blog
+    ├── _index.md // &amp;lt;- /blog/
+    └── post-1.md // &amp;lt;- /blog/post-1/&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;_index.md是索引，会自定根据你的文件夹结构进行侧边栏的层次设置&lt;/p&gt;
+&lt;h2&gt;部署到到GitHub pages Git同步&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;部署到到github-pages-git同步&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e9%83%a8%e7%bd%b2%e5%88%b0%e5%88%b0github-pages-git%e5%90%8c%e6%ad%a5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;我们已经建立了一个初具雏形的网页，对我来讲我还需要对它进行一个“部署”的操作，也是&lt;a href=&#34;https://imfing.github.io/hextra/zh-cn/docs/guide/deploy-site/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;教程&lt;/a&gt;非常清晰了,在目录新建.github/workflows/pages.yaml文件，按照教程填好内容即可。&lt;/p&gt;
+&lt;p&gt;之后就可以走git的流程啦&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;$ hugo -t 
+$ cd public  # 切换到本地存储网站内容的文件夹（假设名称为public）
+$ #git init  # 在当前文件夹中初始化一个新的 Git 仓库,只在第一次使用
+$ #git remote add origin https://github.com/coderzh/coderzh.github.io.git  # 将本地仓库关联到远程仓库，#只在第一次使用
+$ git add -A  # 将所有更改的文件添加到 Git 暂存区
+$ git commit -m &amp;#34;first commit&amp;#34;  # 提交更改并附上提交信息 &amp;#34;first commit&amp;#34;
+$ git push -u origin master  # 将本地仓库的内容推送到远程仓库的 master 分支，并设置 &amp;#34;origin&amp;#34; 作为默认远程仓库&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;后面已经有一些数据的时候再次推送新的内容
+git status&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;# 从远程拉去项目
+#git clone xxx
+# 切换到主分支，即main分支
+git switch main
+# 将master分支合并到main分支上
+git merge --no-ff master
+# 提供commit
+git commit -m &amp;#34;合并master&amp;#34;
+# 推送到远程main分支
+git push
+# 删除远程分支
+git push -d origin master&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;#强制推送到main&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;git push -f origin main&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;hugo &amp;ndash;theme=hextra &amp;ndash;baseURL=&amp;ldquo;&lt;a href=&#34;http://Jiny-Wang.github.io/%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://Jiny-Wang.github.io/&#34;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;至此，暂结。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
