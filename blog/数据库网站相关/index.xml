@@ -180,7 +180,7 @@ hextra主题支持的架构如下：&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
   
 
-&lt;pre&gt;&lt;code&gt;$ hugo -t 
+&lt;pre&gt;&lt;code&gt;$ hugo
 $ cd public  # 切换到本地存储网站内容的文件夹（假设名称为public）
 $ #git init  # 在当前文件夹中初始化一个新的 Git 仓库,只在第一次使用
 $ #git remote add origin https://github.com/coderzh/coderzh.github.io.git  # 将本地仓库关联到远程仓库，#只在第一次使用
@@ -242,7 +242,6 @@ git push -d origin master&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code
 
   
 &lt;/div&gt;
-&lt;p&gt;hugo &amp;ndash;theme=hextra &amp;ndash;baseURL=&amp;ldquo;&lt;a href=&#34;http://Jiny-Wang.github.io/%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://Jiny-Wang.github.io/&#34;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;至此，暂结。&lt;/p&gt;
 
       </description>
