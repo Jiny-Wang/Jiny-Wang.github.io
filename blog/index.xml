@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gabirelle&#39;s Blog ~ – Blog</title>
+    <title>Gabrielle&#39;s Blog ~ – Blog</title>
     <link>http://Jiny-Wang.github.io/blog/</link>
-    <description>Recent content in Blog on Gabirelle&#39;s Blog ~</description>
+    <description>Recent content in Blog on Gabrielle&#39;s Blog ~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 10 Jun 2024 16:09:29 +0800</lastBuildDate>
@@ -14,6 +14,20 @@
         
       
     
+    
+    <item>
+      <title>Mysql</title>
+      <link>http://Jiny-Wang.github.io/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/mysql/</link>
+      <pubDate>Fri, 21 Jun 2024 14:49:24 +0800</pubDate>
+      
+      <guid>http://Jiny-Wang.github.io/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/mysql/</guid>
+      <description>
+        
+        
+        &lt;p&gt;记录mysql&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>hugo联合github搭建blog</title>
@@ -71,7 +85,7 @@ hugo new site BlogSource --format=yaml&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#3
 
   
 &lt;/div&gt;
-&lt;p&gt;下载主题,主题可以从[官方]（https://themes.gohugo.io/）查找&lt;/p&gt;
+&lt;p&gt;下载主题,主题可以从&lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;官方&lt;/a&gt;查找&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
   
 
@@ -174,8 +188,8 @@ hextra主题支持的架构如下：&lt;/p&gt;
   
 &lt;/div&gt;
 &lt;p&gt;_index.md是索引，会自定根据你的文件夹结构进行侧边栏的层次设置&lt;/p&gt;
-&lt;h2&gt;部署到到GitHub pages Git同步&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;部署到到github-pages-git同步&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%e9%83%a8%e7%bd%b2%e5%88%b0%e5%88%b0github-pages-git%e5%90%8c%e6%ad%a5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;我们已经建立了一个初具雏形的网页，对我来讲我还需要对它进行一个“部署”的操作，也是&lt;a href=&#34;https://imfing.github.io/hextra/zh-cn/docs/guide/deploy-site/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;教程&lt;/a&gt;非常清晰了,在目录新建.github/workflows/pages.yaml文件，按照教程填好内容即可。&lt;/p&gt;
+&lt;h2&gt;部署到到GitHub pages&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;部署到到github-pages&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e9%83%a8%e7%bd%b2%e5%88%b0%e5%88%b0github-pages&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;我们已经建立了一个初具雏形的网页，对我来讲我还需要对它进行一个“部署”的操作，也是&lt;a href=&#34;https://imfing.github.io/hextra/zh-cn/docs/guide/deploy-site/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;教程&lt;/a&gt;非常清晰了,在&lt;strong&gt;public&lt;/strong&gt;目录新建.github/workflows/pages.yaml文件，按照教程填好内容即可。&lt;/p&gt;
 &lt;p&gt;之后就可以走git的流程啦&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
   
@@ -183,7 +197,7 @@ hextra主题支持的架构如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ hugo
 $ cd public  # 切换到本地存储网站内容的文件夹（假设名称为public）
 $ #git init  # 在当前文件夹中初始化一个新的 Git 仓库,只在第一次使用
-$ #git remote add origin https://github.com/coderzh/coderzh.github.io.git  # 将本地仓库关联到远程仓库，#只在第一次使用
+$ #git remote add origin https://github.com/username/username.github.io.git  # 将本地仓库关联到远程仓库，#只在第一次使用
 $ git add -A  # 将所有更改的文件添加到 Git 暂存区
 $ git commit -m &amp;#34;first commit&amp;#34;  # 提交更改并附上提交信息 &amp;#34;first commit&amp;#34;
 $ git push -u origin master  # 将本地仓库的内容推送到远程仓库的 master 分支，并设置 &amp;#34;origin&amp;#34; 作为默认远程仓库&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
@@ -198,23 +212,12 @@ $ git push -u origin master  # 将本地仓库的内容推送到远程仓库的 
 
   
 &lt;/div&gt;
-&lt;p&gt;后面已经有一些数据的时候再次推送新的内容
-git status&lt;/p&gt;
+&lt;h2&gt;通过Git同步&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;通过git同步&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e9%80%9a%e8%bf%87git%e5%90%8c%e6%ad%a5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;保证网站没有更改的时候可以强制推送到远程仓库的main，一定要保重远程没有更改的情况下&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
   
 
-&lt;pre&gt;&lt;code&gt;# 从远程拉去项目
-#git clone xxx
-# 切换到主分支，即main分支
-git switch main
-# 将master分支合并到main分支上
-git merge --no-ff master
-# 提供commit
-git commit -m &amp;#34;合并master&amp;#34;
-# 推送到远程main分支
-git push
-# 删除远程分支
-git push -d origin master&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+&lt;pre&gt;&lt;code&gt;git push -f origin main&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
   &lt;button
     class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
     title=&#34;Copy code&#34;
@@ -226,11 +229,56 @@ git push -d origin master&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code
 
   
 &lt;/div&gt;
-&lt;p&gt;#强制推送到main&lt;/p&gt;
+&lt;p&gt;关于自动化同步的我也找到一个脚本如下（来源待补充）&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
   
 
-&lt;pre&gt;&lt;code&gt;git push -f origin main&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/sh
+
+# 任一步骤执行失败都会终止整个部署过程
+set -e
+
+printf &amp;#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&amp;#34;
+
+# 构建静态内容
+#hugo # if using a theme, replace with `hugo -t &amp;lt;YOURTHEME&amp;gt;`
+hugo --theme=hextra --baseURL=&amp;#34;http://username.github.io/&amp;#34;
+
+# 切换到 Public 文件夹
+cd public
+
+# 添加更改到 git
+git add .
+
+# 提交更改
+msg=&amp;#34;rebuilding site $(date)&amp;#34;
+if [ -n &amp;#34;$*&amp;#34; ]; then
+msg=&amp;#34;$*&amp;#34;
+fi
+git commit -m &amp;#34;$msg&amp;#34;
+
+# 推送到远程仓库
+git push origin main&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;如何远程有更改，就先把远程拉到本地（注意在publish文件夹执行），之后执行推送&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;pre&gt;&lt;code&gt;cd public
+git fetch origin
+git reset --hard origin/main
+cd ..
+./deploy.sh&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
   &lt;button
     class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
     title=&#34;Copy code&#34;
