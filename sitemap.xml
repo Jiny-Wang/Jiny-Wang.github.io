@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://Jiny-Wang.github.io/docs/biotools/flaml1/</loc>
+    <lastmod>2024-06-21T15:20:00+08:00</lastmod>
+  </url><url>
     <loc>http://Jiny-Wang.github.io/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/mysql/</loc>
     <lastmod>2024-06-21T14:49:24+08:00</lastmod>
   </url><url>
@@ -13,6 +16,9 @@
   </url><url>
     <loc>http://Jiny-Wang.github.io/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/hugo_github_buildblog/</loc>
     <lastmod>2024-06-10T16:09:29+08:00</lastmod>
+  </url><url>
+    <loc>http://Jiny-Wang.github.io/docs/biotools/</loc>
+    <lastmod>2024-06-10T15:28:16+08:00</lastmod>
   </url><url>
     <loc>http://Jiny-Wang.github.io/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/</loc>
     <lastmod>2024-06-10T15:28:16+08:00</lastmod>
